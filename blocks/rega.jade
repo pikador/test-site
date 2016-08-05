@@ -2,13 +2,18 @@
     .container
         .row
             p.three.rega Начни зарабатывать СЕЙЧАС!
-                  .col-xs-4
-                  .col-xs-6.col-xs-offset-3
-
                         form.form-inline
                             .form-group
-                                input.form-control(type='text', placeholder='Имя')
+
+                                input.form-control(type='name', placeholder='Введите имя')
+                                label.rega(for='name',class='control-label') Имя
                             .form-group
-                                input.form-control(type='tel', placeholder='Фамилия')
+
+                                input.form-control(type='firstname', placeholder='Введите фамилию')
+                                label.rega(for='firstname',class='control-label') Фамилия
                             .form-group
-                                input.form-control(type='email', placeholder='Email')
+
+                                input.form-control(type='email', placeholder='Введите Email')
+                                label.rega(for='email',class='control-label') E-mail
+                        .button_wrap
+                            button.btn.btn-primary.btn-orange.btn-lg(type='open') Открыть вклад

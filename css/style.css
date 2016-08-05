@@ -6,14 +6,27 @@ header.mineheader {
 
 
 }
-
-nav{
-  text-align: center;
-  height: 55px; /* ������ */
-  padding: 15px 80px;
-  width: 100%;
+.info-icons .thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  border: 0px ;
+}
+.navigation .nav > li > a:focus, .nav > li > a:hover{
+  background: #ffffff;
+}
+.navigation .nav > li > a{
+  padding: 15px 0px;
+}
+a:focus, a:hover {
+  color: #ff7800;
+}
+.navigation{
   background: #ff7800;
-  font-size: 20px;
+  font-size: 12px;
+  font-weight:600;
+  text-transform:uppercase;
+
 }
 nav a{
   display: inline-block;
@@ -46,12 +59,20 @@ nav a:active {
 .p title {
   text-align: center;
 }
+a.logo{
+  display: inline-block;
+}
 
-p.three.header {
-  margin-top: 28px;
-  margin-bottom: 0px;
+.logo-text {
   text-align: left;
   font-size: 20px;
+  display: inline-block;
+  word-wrap: normal;
+  white-space: normal;
+  line-height: 1;
+  vertical-align: top;
+  height: 92px;
+  padding: 60px 0 0;
 
 }
 h2.preim-title{
@@ -60,12 +81,19 @@ h2.preim-title{
 .rev {
   margin-top: 50px;
 }
-a.login {
+.login {
+  padding: 10px 0 0;
+}
+span.login {
   color:#ff7800;
-  font-size: 20px;
+  font-size: 12px;
   text-align: right;
   padding: 10px 20px;
   margin-top: 45px;
+}
+a.signin{
+  color: #9d9d9d;
+
 }
 .login {
   display: inline-block;
@@ -151,6 +179,8 @@ p.rev {
 }
 .oval-text {
   display: inline-block;
+  position: relative;
+  top: -12px;
 }
 a.oval-text {
   color:#ff7800;
@@ -198,6 +228,12 @@ font-size: 20px;
   background: url('../img/bg_1.jpg');
 }
 
+.slider-concrete {
+    padding-top: 20px;
+    width: 100%;
+    height: 170px;
+}
+
 p.three.pr {
   font-size: 20px;
   font-weight: bold;
@@ -216,20 +252,35 @@ p.two.pr {
   padding-bottom: 40px;
   text-align: center;
 }
-.tarif-cocrete-type1 {
+.tarif-concrete-type1 {
   background-color: #ffffff;
   border-radius: 7px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.tarif-concrete-text {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+}
 
 .tarifs_info {
   display: inline-block;
-  margin-left: 3px;
+}
+label.rega {
+  padding: 0px 30px;
 }
 
+.slider-concrete .slider-handle{
+  background: #ff7800;
+}
+.slider-concrete .slider-selection{
+  background: #ff7800;
+}
+.slider-concrete .slider.slider-horizontal{
+  width: 100%;
+}
 i.tarifs_info {
-  text-align: left;
   display: inline-block;
   padding: 0.1em;
 }
@@ -250,10 +301,14 @@ p.two.tarif {
 
 }
 p.tarifs_info{
-  text-align: left;
   font-size: 17px;
   padding: 0px 0px;
 
+}
+.sliders{
+  position: absolute;
+  top: 258px;
+  width: 100%;
 }
 .twentydays_content {
   margin-top: 20px;
@@ -263,25 +318,27 @@ p.fore.tarifs_info {
   color: #9d9d9d;
   padding: 0.1em;
   margin-left: 65px;
+    text-align: right;
+  padding-bottom: 170px;
+}
+p.tarifs_info_right{
+    text-align: right;
+    font-size: 17px;
+    padding: 0px 0px;
 }
 .btn-orange-tarifs {
-  width: 80%;
   text-align: center;
   background-color: #ff9c00;
   color: #ffffff;
   height: 50px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-color: #ff7c09;
+
 }
 .btn-orange-tarifs:hover {
-  width: 80%;
-  text-align: center;
   background-color: #ff7c09;
   color: #ffffff;
-  height: 50px;
-  border-radius: 5px;
-  margin-bottom: 20px;
   border-color: #ff7c09;
 }
 .button_wrap{
@@ -289,32 +346,22 @@ p.fore.tarifs_info {
 }
 .btn-orange {
   width: 40%;
-  margin-top: 60px;
+margin-top: 60px;
   background-color: #ff9c00;
   color: #ffffff;
-  height: 50px;
+  height: 60px;
   border-radius: 5px;
   margin-bottom: 60px;
   border-color: #ff9c00;
 }
 .btn-orange:hover{
-  width: 40%;
-  margin-top: 60px;
   background-color: #ff7c09;
   color: #ffffff;
-  height: 50px;
-  border-radius: 5px;
-  margin-bottom: 60px;
   border-color: #ff9c00;
 }
 .btn-orange:active{
-  width: 40%;
-  margin-top: 60px;
   background-color: #cbcbcb;
   color: #ffffff;
-  height: 50px;
-  border-radius: 5px;
-  margin-bottom: 60px;
   border-color: #ff9c00;
 }
 .arrow_box {
@@ -342,7 +389,7 @@ p.fore.tarifs_info {
   padding-left: 40px;
   padding-top: 100px;
 }
-.arrow_box:after, .arrow_box:before {
+.arrow_box:after{
   bottom: 100%;
   left: 70%;
   border: solid transparent;
@@ -359,12 +406,7 @@ p.fore.tarifs_info {
   border-width: 20px;
   margin-left: -40px;
 }
-.arrow_box:before {
-  border-color: rgba(245, 245, 245, 0);
-  border-bottom-color: #f5f5f5;
-  border-width: 21px;
-  margin-left: -21px;
-}
+
 .one.line {
   display: inline-block;
 }
@@ -380,14 +422,12 @@ p.fore.one_line {
   position: relative;
   top:-10px;
 }
-p.three.info{
-  font-size: 17px;
+.info-item-title-block{
+  font-size: 20px;
   font-weight: bold;
 
 }
-p.info1 {
-  position: relative;
-  top: -15px;
+.info-item-subtitle-block{
   font-size: 10px;
 }
 .tarif {
@@ -399,7 +439,7 @@ p.info1 {
   margin-top: -78px;
 }
 .info-icons{
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   padding-top: 40px;
   vertical-align: middle;
 }

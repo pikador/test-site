@@ -1,28 +1,34 @@
 ﻿header.mainheader
 	.container
 		.row
-			.col-xs-5.variant_header_logo
-				a(href='#')
+			.col-xs-8
+				a.logo(href='#')
 					img(src='img/logo.png')
-			.col-xs-2
-				p.three.header Инвестиционный сервис
-			.col-xs-5.variant_header_login.text-right
+				.logo-text Инвестиционный
+				.logo-text сервис
+			.col-xs-4
 				.login
-					i.fa.fa-user.fa-2x
-					a.login(href='#')
-						span Войти
-					p.login или
-					a.login(href='#')
-						span  зарегистрироваться
-.navigation
-	.container-fluid
-		.row
-			nav
-					a(href='#') О нас
-					a(href='#') Тарифы
-					a(href='#') Правила
-					a(href='#') FAQ
-					a(href='#') Отзывы
-					a(href='#') Контакты
-					a(href='#') Обратная связь
+					a.signin
+						i.fa.fa-user.fa-2x
+						span.login(href='#') Войти
+					span или
+					a.signin
+						span.login(href='#') зарегистрироваться
 
+.navigation
+	.container
+			nav.nav.nav-pills.nav-justified
+				li
+					a(href='#') О нас
+				li
+					a(href='#') Тарифы
+				li
+					a(href='#') Правила
+				li
+					a(href='#') FAQ
+				li
+					a(href='#') Отзывы
+				li
+					a(href='#') Контакты
+				li
+					a(href='#') Обратная связь

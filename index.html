@@ -4,65 +4,86 @@
     <title>Test</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
   </head>
   <body>
     <header class="mainheader">
       <div class="container">
         <div class="row">
-          <div class="col-xs-5 variant_header_logo"><a href="#"><img src="img/logo.png"></a></div>
-          <div class="col-xs-2">
-            <p class="three header">Инвестиционный сервис</p>
+          <div class="col-xs-8"><a href="#" class="logo"><img src="img/logo.png"></a>
+            <div class="logo-text">Инвестиционный</div>
+            <div class="logo-text">сервис</div>
           </div>
-          <div class="col-xs-5 variant_header_login text-right">
-            <div class="login"><i class="fa fa-user fa-2x"></i><a href="#" class="login"><span>Войти</span></a>
-              <p class="login">или</p><a href="#" class="login"><span> зарегистрироваться</span></a>
-            </div>
+          <div class="col-xs-4">
+            <div class="login"><a class="signin"><i class="fa fa-user fa-2x"></i><span href="#" class="login">Войти</span></a><span>или</span><a class="signin"><span href="#" class="login">зарегистрироваться</span></a></div>
           </div>
         </div>
       </div>
     </header>
     <div class="navigation">
-      <div class="container-fluid">
-        <div class="row">
-          <nav><a href="#">О нас</a><a href="#">Тарифы</a><a href="#">Правила</a><a href="#">FAQ</a><a href="#">Отзывы</a><a href="#">Контакты</a><a href="#">Обратная связь</a></nav>
-        </div>
+      <div class="container">
+        <nav class="nav nav-pills nav-justified">
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Обратная связь</a></li>
+        </nav>
       </div>
     </div>
     <div class="info-icons">
       <div class="container">
         <div class="row">
-          <div class="col-md-offset-2">
-            <div class="col-md-10">
+          <div class="col-md-offset-1">
+            <div class="col-md-11">
               <div class="col-md-12">
                 <div class="row">
                   <div class="col-md-3">
-                    <div class="col-md-4"><i class="icons fa fa-users fa-3x"></i></div>
+                    <div class="col-md-4">
+                      <div class="media-left"><i class="media-object icons fa fa-users fa-3x"></i></div>
+                    </div>
                     <div class="col-md-8">
-                      <p class="three info">6823</p>
-                      <p class="info1">инвесторов</p>
+                      <div class="media-body">
+                        <div class="info-item-title-block">6823</div>
+                        <div class="info-item-subtitle-block">инвесторов</div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <div class="col-md-3"><i class="icons fa fa-ruble fa-3x"></i></div>
+                    <div class="col-md-3">
+                      <div class="media-left"><i class="media-object icons fa fa-ruble fa-3x"></i></div>
+                    </div>
                     <div class="col-md-9">
-                      <p class="three info">7782640 р</p>
-                      <p class="info1">инвестировано</p>
+                      <div class="media-body">
+                        <div class="info-item-title-block">7782640 р</div>
+                        <div class="info-item-subtitle-block">инвестировано</div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <div class="col-md-4"><i class="icons fa fa-stack-overflow fa-3x"></i></div>
+                    <div class="col-md-4">
+                      <div class="media-left"><i class="media-object icons fa fa-stack-overflow fa-3x"></i></div>
+                    </div>
                     <div class="col-md-8">
-                      <p class="three info">738175 р</p>
-                      <p class="info1">выплачено</p>
+                      <div class="media-body">
+                        <div class="info-item-title-block">738175 р</div>
+                        <div class="info-item-subtitle-block">выплачено</div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-sm-3">
-                    <div class="col-md-4"><i class="icons fa fa-trophy fa-3x"></i></div>
+                    <div class="col-md-4">
+                      <div class="media-left"><i class="media-object icons fa fa-trophy fa-3x"></i></div>
+                    </div>
                     <div class="col-md-8">
-                      <p class="three info">100%</p>
-                      <p class="info1">выплат</p>
+                      <div class="media-body">
+                        <div class="info-item-title-block">100%</div>
+                        <div class="info-item-subtitle-block">выплат</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -87,67 +108,107 @@
             <div class="row">
               <div class="col-sm-4">
                 <div class="tarif-concrete">
-                  <div class="tarif-cocrete-type1">
-                    <p class="one tarif">8%
-                      <div class="tarifs_info"><i class="tarifs_info fa fa-clock-o"></i>
-                        <p class="tarifs_info">10 дней</p>
-                        <p class="tarifs_info">500-4999 p</p>
-                        <p class="fore tarifs_info">диапазон размера вкладов</p>
+                  <div class="tarif-concrete-type1">
+                    <div class="tarif-concrete-text">
+                      <p class="one tarif">8%
+                        <div class="tarifs_info">
+                          <div class="col-sm-5"><i class="tarifs_info fa fa-clock-o"></i>
+                            <p class="tarifs_info">10 дней</p>
+                          </div>
+                          <div class="col-sm-7">
+                            <p class="tarifs_info_right">500-4999 p</p>
+                            <p class="fore tarifs_info">диапазон размера вкладов</p>
+                          </div>
+                        </div>
+                      </p>
+                      <div class="button_wrap">
+                        <button type="open" class="btn btn-primary btn-orange-tarifs btn-lg btn-block">Открыть вклад</button>
                       </div>
-                      <div class="tarifs_info">
-                        <p class="tarifs_info">3500</p>
-                        <p class="tarifs_info">тут доделать</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="tarif-concrete">
+                  <div class="tarif-concrete-type1">
+                    <div class="tarif-concrete-text">
+                      <p class="one tarif">20%
+                        <div class="tarifs_info">
+                          <div class="col-sm-5"><i class="tarifs_info fa fa-clock-o"></i>
+                            <p class="tarifs_info">20 дней</p>
+                          </div>
+                          <div class="col-sm-7">
+                            <p class="tarifs_info_right">5000-9999 p</p>
+                            <p class="fore tarifs_info">диапазон размера вкладов</p>
+                          </div>
+                        </div>
+                      </p>
+                      <div class="button_wrap">
+                        <button type="open" class="btn btn-primary btn-orange-tarifs btn-lg btn-block">Открыть вклад</button>
                       </div>
-                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="tarif-concrete">
+                  <div class="tarif-concrete-type1">
+                    <div class="tarif-concrete-text">
+                      <p class="one tarif">32%
+                        <div class="tarifs_info">
+                          <div class="col-sm-5"><i class="tarifs_info fa fa-clock-o"></i>
+                            <p class="tarifs_info">30 дней</p>
+                          </div>
+                          <div class="col-sm-7">
+                            <p class="tarifs_info_right">10000-15000 p</p>
+                            <p class="fore tarifs_info">диапазон размера вкладов</p>
+                          </div>
+                        </div>
+                      </p>
+                      <div class="button_wrap">
+                        <button type="open" class="btn btn-primary btn-orange-tarifs btn-lg btn-block">Открыть вклад</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sliders background-gray">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="slider-concrete">
+                    <div class="col-sm-4">
+                      <p class="tarifs_info"> 3500</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input class="slider-money">
+                    </div>
                     <p class="two tarif">Ваша прибыль</p>
                     <p class="one tarif">1600 р</p>
-                    <div class="button_wrap">
-                      <button type="open" class="btn btn-primary btn-orange-tarifs btn-lg">Открыть вклад</button>
-                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="tarif-concrete">
-                  <div class="tarif-cocrete-type1">
-                    <p class="one tarif">20%
-                      <div class="tarifs_info"><i class="tarifs_info fa fa-clock-o"></i>
-                        <p class="tarifs_info">20 дней</p>
-                        <p class="tarifs_info">5000-9999 p</p>
-                        <p class="fore tarifs_info">диапазон размера вкладов</p>
-                      </div>
-                      <div class="tarifs_info">
-                        <p class="tarifs_info">7500</p>
-                        <p class="tarifs_info">тут доделать</p>
-                      </div>
-                    </p>
+                <div class="col-sm-4">
+                  <div class="slider-concrete">
+                    <div class="col-sm-4">
+                      <p class="tarifs_info"> 7500</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input class="slider-money">
+                    </div>
                     <p class="two tarif">Ваша прибыль</p>
                     <p class="one tarif">2600 р</p>
-                    <div class="button_wrap">
-                      <button type="open" class="btn btn-primary btn-orange-tarifs btn-lg">Открыть вклад</button>
-                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="tarif-concrete">
-                  <div class="tarif-cocrete-type1">
-                    <p class="one tarif">32%
-                      <div class="tarifs_info"><i class="tarifs_info fa fa-clock-o"></i>
-                        <p class="tarifs_info">30 дней</p>
-                        <p class="tarifs_info">10000-15000 p</p>
-                        <p class="fore tarifs_info">диапазон размера вкладов</p>
-                      </div>
-                      <div class="tarifs_info">
-                        <p class="tarifs_info">13500</p>
-                        <p class="tarifs_info">тут доделать</p>
-                      </div>
-                    </p>
+                <div class="col-sm-4">
+                  <div class="slider-concrete">
+                    <div class="col-sm-4">
+                      <p class="tarifs_info"> 13500</p>
+                    </div>
+                    <div class="col-sm-8">
+                      <input class="slider-money">
+                    </div>
                     <p class="two tarif">Ваша прибыль</p>
                     <p class="one tarif">11600 р</p>
-                    <div class="button_wrap">
-                      <button type="open" class="btn btn-primary btn-orange-tarifs btn-lg">Открыть вклад</button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -273,19 +334,22 @@
       <div class="container">
         <div class="row">
           <p class="three rega">Начни зарабатывать СЕЙЧАС!
-            <div class="col-xs-4"></div>
-            <div class="col-xs-6 col-xs-offset-3">
-              <form class="form-inline">
-                <div class="form-group">
-                  <input type="text" placeholder="Имя" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="tel" placeholder="Фамилия" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="email" placeholder="Email" class="form-control">
-                </div>
-              </form>
+            <form class="form-inline">
+              <div class="form-group">
+                <input type="name" placeholder="Введите имя" class="form-control">
+                <label for="name" class="rega control-label">Имя</label>
+              </div>
+              <div class="form-group">
+                <input type="firstname" placeholder="Введите фамилию" class="form-control">
+                <label for="firstname" class="rega control-label">Фамилия</label>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Введите Email" class="form-control">
+                <label for="email" class="rega control-label">E-mail</label>
+              </div>
+            </form>
+            <div class="button_wrap">
+              <button type="open" class="btn btn-primary btn-orange btn-lg">Открыть вклад</button>
             </div>
           </p>
         </div>
@@ -303,5 +367,10 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
