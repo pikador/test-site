@@ -6,11 +6,9 @@ header.mineheader {
 
 
 }
-.info-icons .thumbnail {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  border: 0px ;
+.icons-info{
+  color:#cbcbcb;
+  font-size: 50px;
 }
 .navigation .nav > li > a:focus, .nav > li > a:hover{
   background: #ffffff;
@@ -425,10 +423,12 @@ p.fore.one_line {
 .info-item-title-block{
   font-size: 20px;
   font-weight: bold;
+  color:#595959;
 
 }
 .info-item-subtitle-block{
   font-size: 10px;
+  color:#595959;
 }
 .tarif {
   position:relative;
